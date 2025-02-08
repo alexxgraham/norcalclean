@@ -1,0 +1,9 @@
+---
+let { label, id, placeholder } = Astro.props;
+let inputClass = "border rounded-md p-2";
+---
+
+<div class="grid w-full">
+    <label for={id}>{label}</label>
+    <input class={inputClass} type="text" name={id} id={id} placeholder={placeholder}>
+</div>
